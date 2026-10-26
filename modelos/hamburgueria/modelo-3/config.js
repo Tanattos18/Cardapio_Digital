@@ -106,6 +106,7 @@ window.CARDAPIO = {
           "nome": "X-Tudo do Zé",
           "desc": "Hambúrguer, presunto, queijo, ovo, bacon, salsicha, milho, alface, tomate e batata palha.",
           "preco": 32.9,
+          "img": "1559067933-0293effe6133",
           "tags": [
             "Mais pedido"
           ]
@@ -113,12 +114,14 @@ window.CARDAPIO = {
         {
           "nome": "X-Salada",
           "desc": "Hambúrguer, queijo, alface, tomate e maionese.",
-          "preco": 19.9
+          "preco": 19.9,
+          "img": "1757834787931-ddd70f3379a5"
         },
         {
           "nome": "X-Egg Bacon",
           "desc": "Hambúrguer, queijo, ovo e bacon.",
-          "preco": 24.9
+          "preco": 24.9,
+          "img": "1601894087104-0c18bc34dbd6"
         },
         {
           "nome": "Cachorro-quente prensado",
@@ -343,7 +346,8 @@ window.CARDAPIO = {
         {
           "nome": "Onion rings",
           "desc": "12 anéis de cebola empanados com molho barbecue.",
-          "preco": 18.9
+          "preco": 18.9,
+          "img": "1612487439058-0564e17f761b"
         },
         {
           "nome": "Nuggets",
@@ -360,11 +364,13 @@ window.CARDAPIO = {
         {
           "nome": "Refrigerante lata 350ml",
           "desc": "Coca-Cola, Guaraná, Fanta ou Sprite.",
-          "preco": 5.9
+          "preco": 5.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Refrigerante 2L",
-          "preco": 12.9
+          "preco": 12.9,
+          "img": "1771770083584-b4b201c85f6a"
         },
         {
           "nome": "Suco natural 400ml",
@@ -390,7 +396,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Água mineral 500ml",
-          "preco": 4
+          "preco": 4,
+          "img": "1616118132534-381148898bb4"
         }
       ]
     },

@@ -174,7 +174,8 @@ window.CARDAPIO = {
         {
           "nome": "Smash Kids + suco",
           "desc": "Smash simples com queijo, batata pequena e suco de 300ml.",
-          "preco": 24.9
+          "preco": 24.9,
+          "img": "1561758033-d89a9ad46330"
         }
       ]
     },
@@ -393,7 +394,8 @@ window.CARDAPIO = {
         {
           "nome": "Onion rings",
           "desc": "12 anéis de cebola empanados com molho barbecue.",
-          "preco": 21.9
+          "preco": 21.9,
+          "img": "1612487439058-0564e17f761b"
         },
         {
           "nome": "Nuggets",
@@ -410,11 +412,13 @@ window.CARDAPIO = {
         {
           "nome": "Refrigerante lata 350ml",
           "desc": "Coca-Cola, Guaraná, Fanta ou Sprite.",
-          "preco": 5.9
+          "preco": 5.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Refrigerante 2L",
-          "preco": 13.9
+          "preco": 13.9,
+          "img": "1771770083584-b4b201c85f6a"
         },
         {
           "nome": "Suco natural 400ml",
@@ -440,7 +444,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Água mineral 500ml",
-          "preco": 4
+          "preco": 4,
+          "img": "1616118132534-381148898bb4"
         }
       ]
     },

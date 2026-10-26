@@ -146,7 +146,8 @@ window.CARDAPIO = {
         {
           "nome": "Nhoque ao sugo",
           "desc": "Nhoque de batata feito na casa, molho de tomate e manjericão.",
-          "preco": 46.9
+          "preco": 46.9,
+          "img": "1788603377885-fdaa9e788707"
         }
       ]
     },
@@ -172,7 +173,8 @@ window.CARDAPIO = {
         {
           "nome": "Bolinho de bacalhau",
           "desc": "6 unidades com maionese de limão.",
-          "preco": 34.9
+          "preco": 34.9,
+          "img": "1666190091191-0cd0c5c8c5b5"
         }
       ]
     },
@@ -217,7 +219,8 @@ window.CARDAPIO = {
         {
           "nome": "Parmegiana de carne",
           "desc": "Contrafilé empanado, molho de tomate, mussarela gratinada e fritas.",
-          "preco": 61.9
+          "preco": 61.9,
+          "img": "1632778149955-e80f8ceca2e8"
         }
       ]
     },
@@ -229,17 +232,20 @@ window.CARDAPIO = {
         {
           "nome": "Prato do dia",
           "desc": "Arroz, feijão, salada, guarnição e a carne do dia.",
-          "preco": 25.9
+          "preco": 25.9,
+          "img": "1628521061262-19b5cdb7eee5"
         },
         {
           "nome": "Executivo de frango",
           "desc": "Filé de frango grelhado, arroz, feijão, salada e fritas.",
-          "preco": 28.9
+          "preco": 28.9,
+          "img": "1749640566096-5d8098d452b4"
         },
         {
           "nome": "Executivo de bife acebolado",
           "desc": "Bife de alcatra acebolado, arroz, feijão, salada e fritas.",
-          "preco": 30.9
+          "preco": 30.9,
+          "img": "1579366948929-444eb79881eb"
         }
       ]
     },
@@ -250,7 +256,8 @@ window.CARDAPIO = {
         {
           "nome": "Pudim de leite",
           "desc": "Receita da casa, com calda de caramelo.",
-          "preco": 13.9
+          "preco": 13.9,
+          "img": "1702728109878-c61a98d80491"
         },
         {
           "nome": "Petit gâteau",
@@ -277,11 +284,13 @@ window.CARDAPIO = {
         },
         {
           "nome": "Refrigerante lata 350ml",
-          "preco": 6.9
+          "preco": 6.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Água mineral",
-          "preco": 4.5
+          "preco": 4.5,
+          "img": "1616118132534-381148898bb4"
         },
         {
           "nome": "Caipirinha",

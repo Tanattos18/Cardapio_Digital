@@ -112,6 +112,7 @@ window.CARDAPIO = {
           "nome": "Risoto de cogumelos",
           "desc": "Arbóreo, mix de cogumelos frescos, parmesão e azeite trufado.",
           "preco": 68.9,
+          "img": "1609770424775-39ec362f2d94",
           "tags": [
             "Vegetariano"
           ]
@@ -129,6 +130,7 @@ window.CARDAPIO = {
           "nome": "Polvo grelhado",
           "desc": "Polvo na brasa, batatas ao murro e páprica defumada.",
           "preco": 129.9,
+          "img": "1731601816614-2423297fe97b",
           "tags": [
             "Novo"
           ]
@@ -157,7 +159,8 @@ window.CARDAPIO = {
         {
           "nome": "Bolinho de bacalhau",
           "desc": "6 unidades com maionese de limão.",
-          "preco": 38.9
+          "preco": 38.9,
+          "img": "1666190091191-0cd0c5c8c5b5"
         }
       ]
     },
@@ -202,7 +205,8 @@ window.CARDAPIO = {
         {
           "nome": "Parmegiana de carne",
           "desc": "Contrafilé empanado, molho de tomate, mussarela gratinada e fritas.",
-          "preco": 70.9
+          "preco": 70.9,
+          "img": "1632778149955-e80f8ceca2e8"
         }
       ]
     },
@@ -214,17 +218,20 @@ window.CARDAPIO = {
         {
           "nome": "Prato do dia",
           "desc": "Arroz, feijão, salada, guarnição e a carne do dia.",
-          "preco": 29.9
+          "preco": 29.9,
+          "img": "1628521061262-19b5cdb7eee5"
         },
         {
           "nome": "Executivo de frango",
           "desc": "Filé de frango grelhado, arroz, feijão, salada e fritas.",
-          "preco": 32.9
+          "preco": 32.9,
+          "img": "1749640566096-5d8098d452b4"
         },
         {
           "nome": "Executivo de bife acebolado",
           "desc": "Bife de alcatra acebolado, arroz, feijão, salada e fritas.",
-          "preco": 35.9
+          "preco": 35.9,
+          "img": "1579366948929-444eb79881eb"
         }
       ]
     },
@@ -235,7 +242,8 @@ window.CARDAPIO = {
         {
           "nome": "Pudim de leite",
           "desc": "Receita da casa, com calda de caramelo.",
-          "preco": 14.9
+          "preco": 14.9,
+          "img": "1702728109878-c61a98d80491"
         },
         {
           "nome": "Petit gâteau",
@@ -262,11 +270,13 @@ window.CARDAPIO = {
         },
         {
           "nome": "Refrigerante lata 350ml",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Água mineral",
-          "preco": 4.5
+          "preco": 4.5,
+          "img": "1616118132534-381148898bb4"
         },
         {
           "nome": "Caipirinha",

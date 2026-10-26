@@ -26,6 +26,11 @@
 .layout-classico .items { display: grid; gap: 0; }
 .layout-classico .item { padding: 18px 52px 18px 0; border-bottom: 1px dashed var(--line); }
 .layout-classico .item:hover h4 { color: var(--pri); }
+.layout-classico .item.com-foto { display: flex; gap: 16px; align-items: flex-start; }
+.layout-classico .item-txt { flex: 1; min-width: 0; }
+.layout-classico .item-foto { flex: none; width: 84px; height: 84px; border-radius: 50%; overflow: hidden; border: 2px solid var(--sec); }
+.layout-classico .item-foto img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 480px) { .layout-classico .item-foto { width: 64px; height: 64px; } }
 .layout-classico .item-line { display: flex; align-items: baseline; gap: 10px; }
 .layout-classico .item h4 { font-size: 1.15rem; font-weight: 600; }
 .layout-classico .dots { flex: 1; border-bottom: 2px dotted var(--line); transform: translateY(-4px); min-width: 20px; }

@@ -121,6 +121,7 @@ window.CARDAPIO = {
           "nome": "Pamonha recheada de costela",
           "desc": "Costela bovina desfiada e queijo.",
           "preco": 18,
+          "img": "1730415136652-3044ec3db585",
           "tags": [
             "Novo",
             "Mais pedido"
@@ -129,11 +130,13 @@ window.CARDAPIO = {
         {
           "nome": "Pamonha de pequi",
           "desc": "Para quem ama o sabor do cerrado.",
-          "preco": 15
+          "preco": 15,
+          "img": "1552332386-1634d96809cf"
         },
         {
           "nome": "Pamonha doce com goiabada",
-          "preco": 13
+          "preco": 13,
+          "img": "1693399991519-bef70bed19a2"
         }
       ]
     },
@@ -152,6 +155,7 @@ window.CARDAPIO = {
           "nome": "Pamonha de sal com queijo",
           "desc": "Recheada com queijo meia-cura.",
           "preco": 12.9,
+          "img": "1732118070605-8c5faa62d284",
           "tags": [
             "Mais pedido"
           ]
@@ -159,28 +163,33 @@ window.CARDAPIO = {
         {
           "nome": "Pamonha de sal com linguiça",
           "desc": "Linguiça de porco caseira.",
-          "preco": 13.9
+          "preco": 13.9,
+          "img": "1730415136652-3044ec3db585"
         },
         {
           "nome": "Pamonha à moda",
           "desc": "Queijo, linguiça e pimenta-de-cheiro.",
           "preco": 14.9,
+          "img": "1588848009826-602764d65627",
           "tags": [
             "Picante"
           ]
         },
         {
           "nome": "Pamonha doce com queijo",
-          "preco": 12.9
+          "preco": 12.9,
+          "img": "1552332386-1634d96809cf"
         },
         {
           "nome": "Pamonha de frango com catupiry",
-          "preco": 14.9
+          "preco": 14.9,
+          "img": "1730415136652-3044ec3db585"
         },
         {
           "nome": "Pamonha frita",
           "desc": "Pamonha de sal dourada na chapa com manteiga.",
           "preco": 13.9,
+          "img": "1664339031047-970bf639e43f",
           "tags": [
             "Novo"
           ]
@@ -194,7 +203,8 @@ window.CARDAPIO = {
         {
           "nome": "Curau",
           "desc": "Copo 300ml, polvilhado com canela.",
-          "preco": 9.9
+          "preco": 9.9,
+          "img": "1673877792724-4ca45923fee4"
         },
         {
           "nome": "Milho assado na manteiga",
@@ -205,16 +215,19 @@ window.CARDAPIO = {
         {
           "nome": "Mingau de milho verde",
           "desc": "Copo 300ml.",
-          "preco": 9.9
+          "preco": 9.9,
+          "img": "1621658537360-dfcb008fe19f"
         },
         {
           "nome": "Bolo de milho (fatia)",
           "desc": "Cremoso, receita de vó.",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1606331481324-de77ab01bb54"
         },
         {
           "nome": "Cuscuz com manteiga",
-          "preco": 8.9
+          "preco": 8.9,
+          "img": "1582299385140-f316dbbba765"
         }
       ]
     },
@@ -231,12 +244,14 @@ window.CARDAPIO = {
         {
           "nome": "Empadão",
           "desc": "Frango, linguiça, queijo, ovo e guariroba.",
-          "preco": 19.9
+          "preco": 19.9,
+          "img": "1581986675622-41eccf27129d"
         },
         {
           "nome": "Pastel assado",
           "desc": "Carne, frango ou queijo.",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1624128082323-beb6b8b508db"
         }
       ]
     },
@@ -266,7 +281,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Refrigerante lata",
-          "preco": 6.9
+          "preco": 6.9,
+          "img": "1696739696220-8d2e27465662"
         }
       ]
     },
@@ -277,17 +293,20 @@ window.CARDAPIO = {
       "itens": [
         {
           "nome": "Dúzia de pamonhas doces",
-          "preco": 118.9
+          "preco": 118.9,
+          "img": "1548078835-cb7d27702c1f"
         },
         {
           "nome": "Dúzia de pamonhas de sal",
           "desc": "Queijo, linguiça ou à moda (pode misturar).",
-          "preco": 142.9
+          "preco": 142.9,
+          "img": "1588848009826-602764d65627"
         },
         {
           "nome": "Pamonha congelada",
           "desc": "Pacote com 5 unidades, dura até 3 meses no freezer.",
-          "preco": 54.9
+          "preco": 54.9,
+          "img": "1732118070605-8c5faa62d284"
         }
       ]
     }

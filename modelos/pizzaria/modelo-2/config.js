@@ -136,7 +136,8 @@ window.CARDAPIO = {
         {
           "nome": "Combo Solo",
           "desc": "1 pizza média tradicional + refrigerante lata.",
-          "preco": 44.9
+          "preco": 44.9,
+          "img": "1565299624946-b28f40a0ae38"
         }
       ]
     },
@@ -447,6 +448,7 @@ window.CARDAPIO = {
               "preco": 75.9
             }
           ],
+          "img": "1692737580563-7ba2d896f0f6",
           "adicionais": [
             {
               "nome": "Borda de catupiry",
@@ -480,6 +482,7 @@ window.CARDAPIO = {
               "preco": 91.9
             }
           ],
+          "img": "1652952561151-97e82f26c336",
           "adicionais": [
             {
               "nome": "Borda de catupiry",
@@ -494,7 +497,6 @@ window.CARDAPIO = {
               "preco": 12
             }
           ],
-          "img": null,
           "tags": [
             "Novo"
           ]
@@ -555,7 +557,8 @@ window.CARDAPIO = {
               "nome": "Média (6 fatias)",
               "preco": 42.9
             }
-          ]
+          ],
+          "img": "1716237387665-85caef84051c"
         },
         {
           "nome": "Banana com canela",
@@ -570,7 +573,8 @@ window.CARDAPIO = {
               "nome": "Média (6 fatias)",
               "preco": 40.9
             }
-          ]
+          ],
+          "img": "1606149186228-4e5ac94a742e"
         },
         {
           "nome": "Romeu e Julieta",
@@ -585,7 +589,8 @@ window.CARDAPIO = {
               "nome": "Média (6 fatias)",
               "preco": 41.9
             }
-          ]
+          ],
+          "img": "1693399991519-bef70bed19a2"
         }
       ]
     },
@@ -596,11 +601,13 @@ window.CARDAPIO = {
         {
           "nome": "Refrigerante 2L",
           "desc": "Coca-Cola, Guaraná ou Fanta.",
-          "preco": 13.9
+          "preco": 13.9,
+          "img": "1771770083584-b4b201c85f6a"
         },
         {
           "nome": "Refrigerante lata 350ml",
-          "preco": 5.9
+          "preco": 5.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Suco natural 500ml",

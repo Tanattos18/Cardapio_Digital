@@ -123,12 +123,14 @@ window.CARDAPIO = {
         {
           "nome": "Espeto de cupim",
           "desc": "Cupim assado lentamente, desmanchando.",
-          "preco": 14.9
+          "preco": 14.9,
+          "img": "1586058584825-c1e87ed735b4"
         },
         {
           "nome": "Espeto de camarão",
           "desc": "Camarão temperado no alho e limão.",
           "preco": 18.9,
+          "img": "1688084468401-4938b073aef2",
           "tags": [
             "Novo"
           ]
@@ -151,7 +153,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Frango",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1594266063697-304befca9629"
         },
         {
           "nome": "Frango com bacon",
@@ -160,16 +163,19 @@ window.CARDAPIO = {
         },
         {
           "nome": "Linguiça toscana",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1591989330748-777649e84466"
         },
         {
           "nome": "Coração de frango",
-          "preco": 8.9
+          "preco": 8.9,
+          "img": "1599487488170-d11ec9c172f0"
         },
         {
           "nome": "Queijo coalho",
           "desc": "Com melaço de cana ou orégano.",
           "preco": 8.9,
+          "img": "1695754146526-5bab379f597a",
           "tags": [
             "Vegetariano"
           ]
@@ -177,11 +183,13 @@ window.CARDAPIO = {
         {
           "nome": "Kafta",
           "desc": "Carne moída temperada com hortelã.",
-          "preco": 9.9
+          "preco": 9.9,
+          "img": "1763647818263-62a9256f097c"
         },
         {
           "nome": "Medalhão de frango com bacon",
-          "preco": 9.9
+          "preco": 9.9,
+          "img": "1753775290395-09e3cb0b6f70"
         },
         {
           "nome": "Misto",
@@ -191,7 +199,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Pão de alho",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1598785244280-7a428600d053"
         }
       ]
     },
@@ -226,7 +235,8 @@ window.CARDAPIO = {
         {
           "nome": "Jantinha dupla",
           "desc": "2 espetos à escolha com todos os acompanhamentos.",
-          "preco": 35.9
+          "preco": 35.9,
+          "img": "1632158930341-46604b637a0f"
         }
       ]
     },
@@ -236,7 +246,8 @@ window.CARDAPIO = {
       "itens": [
         {
           "nome": "Mandioca frita",
-          "preco": 24.9
+          "preco": 24.9,
+          "img": "1684893265739-a88b30c33e92"
         },
         {
           "nome": "Batata frita",
@@ -245,7 +256,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Calabresa acebolada",
-          "preco": 35.9
+          "preco": 35.9,
+          "img": "1592259695987-4aa79c3c34a6"
         },
         {
           "nome": "Frango a passarinho",
@@ -254,7 +266,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Torresmo",
-          "preco": 32.9
+          "preco": 32.9,
+          "img": "1727867168767-c67974f68508"
         }
       ]
     },
@@ -270,7 +283,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Cerveja lata 350ml",
-          "preco": 7.9
+          "preco": 7.9,
+          "img": "1699107026455-0ed83c781458"
         },
         {
           "nome": "Chopp 300ml",
@@ -285,15 +299,18 @@ window.CARDAPIO = {
         },
         {
           "nome": "Refrigerante lata",
-          "preco": 6.9
+          "preco": 6.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Suco natural 400ml",
-          "preco": 9.9
+          "preco": 9.9,
+          "img": "1600271886742-f049cd451bba"
         },
         {
           "nome": "Água mineral",
-          "preco": 3.5
+          "preco": 3.5,
+          "img": "1616118132534-381148898bb4"
         }
       ]
     }

@@ -151,12 +151,14 @@ window.CARDAPIO = {
         {
           "nome": "Feijoada (sábado)",
           "desc": "Serve 1 pessoa bem servida.",
-          "preco": 34.9
+          "preco": 34.9,
+          "img": "1627906327792-4ede6149189f"
         },
         {
           "nome": "Galinhada",
           "desc": "Arroz com frango caipira, açafrão e cheiro-verde.",
-          "preco": 28.9
+          "preco": 28.9,
+          "img": "1603496987674-79600a000f55"
         }
       ]
     },
@@ -182,7 +184,8 @@ window.CARDAPIO = {
         {
           "nome": "Bolinho de bacalhau",
           "desc": "6 unidades com maionese de limão.",
-          "preco": 27.9
+          "preco": 27.9,
+          "img": "1666190091191-0cd0c5c8c5b5"
         }
       ]
     },
@@ -227,7 +230,8 @@ window.CARDAPIO = {
         {
           "nome": "Parmegiana de carne",
           "desc": "Contrafilé empanado, molho de tomate, mussarela gratinada e fritas.",
-          "preco": 49.9
+          "preco": 49.9,
+          "img": "1632778149955-e80f8ceca2e8"
         }
       ]
     },
@@ -239,17 +243,20 @@ window.CARDAPIO = {
         {
           "nome": "Prato do dia",
           "desc": "Arroz, feijão, salada, guarnição e a carne do dia.",
-          "preco": 20.9
+          "preco": 20.9,
+          "img": "1628521061262-19b5cdb7eee5"
         },
         {
           "nome": "Executivo de frango",
           "desc": "Filé de frango grelhado, arroz, feijão, salada e fritas.",
-          "preco": 23.9
+          "preco": 23.9,
+          "img": "1749640566096-5d8098d452b4"
         },
         {
           "nome": "Executivo de bife acebolado",
           "desc": "Bife de alcatra acebolado, arroz, feijão, salada e fritas.",
-          "preco": 24.9
+          "preco": 24.9,
+          "img": "1579366948929-444eb79881eb"
         }
       ]
     },
@@ -260,7 +267,8 @@ window.CARDAPIO = {
         {
           "nome": "Pudim de leite",
           "desc": "Receita da casa, com calda de caramelo.",
-          "preco": 10.9
+          "preco": 10.9,
+          "img": "1702728109878-c61a98d80491"
         },
         {
           "nome": "Petit gâteau",
@@ -287,11 +295,13 @@ window.CARDAPIO = {
         },
         {
           "nome": "Refrigerante lata 350ml",
-          "preco": 5.9
+          "preco": 5.9,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Água mineral",
-          "preco": 4.5
+          "preco": 4.5,
+          "img": "1616118132534-381148898bb4"
         },
         {
           "nome": "Caipirinha",

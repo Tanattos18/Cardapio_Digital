@@ -162,9 +162,10 @@
     var nome = '<h4>' + esc(it.nome) + '</h4>';
     var desc = it.desc ? '<p class="desc">' + esc(it.desc) + '</p>' : '';
     if (LAYOUT === 'classico') {
-      return '<article class="item" data-item="' + it.id + '" data-busca="' + busca + '">' +
-        '<div class="item-line">' + nome + '<span class="dots"></span>' + precoHtml(it) + '</div>' +
-        desc + opcoesHtml(it) + tagsHtml(it) + addBtn + '</article>';
+      return '<article class="item' + (it.img ? ' com-foto' : '') + '" data-item="' + it.id + '" data-busca="' + busca + '">' +
+        (it.img ? '<div class="item-foto">' + imgTag(it.img, 200, it.nome) + '</div>' : '') +
+        '<div class="item-txt"><div class="item-line">' + nome + '<span class="dots"></span>' + precoHtml(it) + '</div>' +
+        desc + opcoesHtml(it) + tagsHtml(it) + '</div>' + addBtn + '</article>';
     }
     if (LAYOUT === 'app') {
       return '<article class="item" data-item="' + it.id + '" data-busca="' + busca + '">' +

@@ -428,7 +428,8 @@ window.CARDAPIO = {
         {
           "nome": "Onion rings",
           "desc": "12 anéis de cebola empanados com molho barbecue.",
-          "preco": 22.9
+          "preco": 22.9,
+          "img": "1612487439058-0564e17f761b"
         },
         {
           "nome": "Nuggets",
@@ -445,11 +446,13 @@ window.CARDAPIO = {
         {
           "nome": "Refrigerante lata 350ml",
           "desc": "Coca-Cola, Guaraná, Fanta ou Sprite.",
-          "preco": 6.5
+          "preco": 6.5,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Refrigerante 2L",
-          "preco": 14.9
+          "preco": 14.9,
+          "img": "1771770083584-b4b201c85f6a"
         },
         {
           "nome": "Suco natural 400ml",
@@ -475,7 +478,8 @@ window.CARDAPIO = {
         },
         {
           "nome": "Água mineral 500ml",
-          "preco": 4
+          "preco": 4,
+          "img": "1616118132534-381148898bb4"
         }
       ]
     },

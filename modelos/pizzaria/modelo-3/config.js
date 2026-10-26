@@ -118,6 +118,7 @@ window.CARDAPIO = {
           "nome": "Lasanha à bolonhesa",
           "desc": "Camadas de massa fresca, ragu de carne, presunto e queijo gratinado.",
           "preco": 39.9,
+          "img": "1709429790175-b02bb1b19207",
           "tags": [
             "Mais pedido"
           ]
@@ -125,7 +126,8 @@ window.CARDAPIO = {
         {
           "nome": "Calzone de calabresa",
           "desc": "Calabresa, mussarela, cebola e catupiry.",
-          "preco": 42.9
+          "preco": 42.9,
+          "img": "1753656681797-3234c89d6d4d"
         }
       ]
     },
@@ -436,6 +438,7 @@ window.CARDAPIO = {
               "preco": 79.9
             }
           ],
+          "img": "1692737580563-7ba2d896f0f6",
           "adicionais": [
             {
               "nome": "Borda de catupiry",
@@ -469,6 +472,7 @@ window.CARDAPIO = {
               "preco": 96.9
             }
           ],
+          "img": "1652952561151-97e82f26c336",
           "adicionais": [
             {
               "nome": "Borda de catupiry",
@@ -483,7 +487,6 @@ window.CARDAPIO = {
               "preco": 12
             }
           ],
-          "img": null,
           "tags": [
             "Novo"
           ]
@@ -544,7 +547,8 @@ window.CARDAPIO = {
               "nome": "Média (6 fatias)",
               "preco": 44.9
             }
-          ]
+          ],
+          "img": "1716237387665-85caef84051c"
         },
         {
           "nome": "Banana com canela",
@@ -559,7 +563,8 @@ window.CARDAPIO = {
               "nome": "Média (6 fatias)",
               "preco": 42.9
             }
-          ]
+          ],
+          "img": "1606149186228-4e5ac94a742e"
         },
         {
           "nome": "Romeu e Julieta",
@@ -574,7 +579,8 @@ window.CARDAPIO = {
               "nome": "Média (6 fatias)",
               "preco": 43.9
             }
-          ]
+          ],
+          "img": "1693399991519-bef70bed19a2"
         }
       ]
     },
@@ -585,11 +591,13 @@ window.CARDAPIO = {
         {
           "nome": "Refrigerante 2L",
           "desc": "Coca-Cola, Guaraná ou Fanta.",
-          "preco": 14.9
+          "preco": 14.9,
+          "img": "1771770083584-b4b201c85f6a"
         },
         {
           "nome": "Refrigerante lata 350ml",
-          "preco": 6.5
+          "preco": 6.5,
+          "img": "1696739696220-8d2e27465662"
         },
         {
           "nome": "Suco natural 500ml",
