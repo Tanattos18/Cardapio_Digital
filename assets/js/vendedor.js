@@ -5,8 +5,9 @@
  * WhatsApp: só números, com 55 + DDD. Ex.: 5562999998888
  */
 window.VENDEDOR = {
-  nome: 'Seu Nome',
-  whatsapp: '5500000000000',
+  nome: 'Joás Santana Nascimento',
+  whatsapp: '5562991657619',
   instagram: '',
-  cidade: 'Sua Cidade - UF'
+  cidade: 'Goiânia - GO',
+  site: 'https://akyllastudio.github.io/links.html' // link profissional, aparece no rodapé da vitrine
 };

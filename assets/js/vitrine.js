@@ -10,6 +10,7 @@
   function abs(caminho) { return new URL(caminho, location.href).href; }
 
   $$('[data-vendedor]').forEach(function (el) { if (V[el.dataset.vendedor]) el.textContent = V[el.dataset.vendedor]; });
+  $$('[data-vendedor-site]').forEach(function (el) { if (V.site) { el.querySelector('a').href = V.site; el.hidden = false; } });
   $$('[data-wa]').forEach(function (el) { el.href = wa(el.dataset.wa); el.target = '_blank'; el.rel = 'noopener'; });
   $$('[data-ano]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   $$('[data-total]').forEach(function (el) { el.textContent = MODELOS.length; });
