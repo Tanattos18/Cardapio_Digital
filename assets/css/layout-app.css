@@ -1,0 +1,31 @@
+/* Layout "App": estilo aplicativo de delivery — capa, perfil com logo e lista com miniaturas. */
+.tema-escuro { --line: rgba(255, 255, 255, .12); --shadow: 0 10px 30px rgba(0, 0, 0, .5); }
+.tema-escuro .chips li, .tema-escuro .status { background: rgba(255, 255, 255, .1); }
+
+.layout-app .hero { max-width: var(--max); margin: 0 auto; }
+.layout-app .cover { position: relative; height: clamp(180px, 34vw, 320px); background-size: cover; background-position: center; }
+@media (min-width: 1120px) { .layout-app .cover { border-radius: 0 0 var(--radius) var(--radius); } }
+.layout-app .cover .top-actions { position: absolute; right: 16px; top: 16px; }
+.layout-app .profile { display: flex; gap: 16px; align-items: flex-end; padding: 0 16px; margin-top: -48px; position: relative; }
+.layout-app .profile .logo { width: 104px; height: 104px; font-size: 1.9rem; border: 4px solid var(--bg); box-shadow: var(--shadow); flex: none; }
+.layout-app .profile h1 { font-size: clamp(1.5rem, 5vw, 2.2rem); margin-top: 52px; }
+.layout-app .slogan { margin: 4px 0 10px; color: var(--muted); }
+.layout-app .hero .chips { padding: 0 16px; }
+@media (max-width: 520px) {
+  .layout-app .profile { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .layout-app .profile h1 { margin-top: 0; }
+}
+
+.layout-app main > section { padding-top: 40px; padding-bottom: 40px; }
+.layout-app .cat-nav { box-shadow: 0 6px 12px -10px rgba(0, 0, 0, .3); }
+.layout-app .items { display: grid; gap: 0 32px; }
+@media (min-width: 860px) { .layout-app .items { grid-template-columns: 1fr 1fr; } }
+.layout-app .item { display: flex; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.layout-app .item-info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.layout-app .item .desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.layout-app .item .tags { margin-bottom: 6px; }
+.layout-app .item .price { margin-top: auto; padding-top: 8px; }
+.layout-app .item-thumb { position: relative; width: 112px; height: 112px; flex: none; border-radius: 12px; overflow: visible; }
+.layout-app .item-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+.layout-app .item-thumb.noimg { width: 44px; background: none; }
+.layout-app .add { position: absolute; right: -6px; bottom: -6px; width: 38px; height: 38px; padding: 0; justify-content: center; border: 3px solid var(--bg); box-shadow: 0 4px 10px rgba(0, 0, 0, .2); }

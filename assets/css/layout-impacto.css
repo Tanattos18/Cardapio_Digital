@@ -1,0 +1,31 @@
+/* Layout "Impacto": capa em tela cheia, tipografia forte e cardápio em cards com foto. */
+.tema-escuro { --line: rgba(255, 255, 255, .12); --shadow: 0 10px 30px rgba(0, 0, 0, .5); }
+.tema-escuro .chips li, .tema-escuro .status { background: rgba(255, 255, 255, .1); }
+
+.layout-impacto .hero { min-height: min(88vh, 760px); display: flex; flex-direction: column; background-size: cover; background-position: center; color: #fff; }
+.layout-impacto .topbar { display: flex; align-items: center; gap: 12px; max-width: var(--max); width: 100%; margin: 0 auto; padding: 18px 16px; }
+.layout-impacto .topbar .logo { width: 48px; height: 48px; font-size: 1rem; }
+.layout-impacto .brand { flex: 1; font-family: var(--font-title); font-weight: 800; font-size: 1.15rem; letter-spacing: .02em; }
+.layout-impacto .hero-inner { margin: auto auto 0; max-width: var(--max); width: 100%; padding: 32px 16px 56px; }
+.layout-impacto .hero .status, .layout-impacto .hero .chips li { background: rgba(255, 255, 255, .14); backdrop-filter: blur(6px); }
+.layout-impacto .eyebrow { margin: 18px 0 0; text-transform: uppercase; letter-spacing: .25em; font-size: .8rem; font-weight: 700; color: var(--sec); }
+.layout-impacto .hero h1 { font-size: clamp(2.8rem, 10vw, 6rem); text-transform: uppercase; letter-spacing: -.01em; margin-top: 6px; }
+.layout-impacto .slogan { font-size: clamp(1.05rem, 2.5vw, 1.35rem); max-width: 34ch; opacity: .9; margin: 10px 0 24px; }
+.layout-impacto .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.layout-impacto .hero .btn-ghost { color: #fff; }
+
+.layout-impacto .cat h3 { font-size: clamp(1.5rem, 4vw, 2rem); text-transform: uppercase; }
+.layout-impacto .items { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.layout-impacto .item { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: transform .2s, box-shadow .2s; }
+.layout-impacto .item:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.layout-impacto .item-img { position: relative; aspect-ratio: 4/3; overflow: hidden; }
+.layout-impacto .item-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.layout-impacto .item:hover .item-img img { transform: scale(1.06); }
+.layout-impacto .item-img.noimg { aspect-ratio: auto; min-height: 0; background: none; }
+.layout-impacto .item-img .tags { position: absolute; left: 12px; top: 12px; }
+.layout-impacto .item-img.noimg .tags { position: static; padding: 14px 18px 0; }
+.layout-impacto .item-body { flex: 1; display: flex; flex-direction: column; padding: 16px 18px 18px; }
+.layout-impacto .item-body h4 { font-size: 1.15rem; }
+.layout-impacto .item-foot { margin-top: auto; padding-top: 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.layout-impacto .price b { font-size: 1.3rem; }
+.layout-impacto .add { padding: 10px 16px; }
