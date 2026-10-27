@@ -3,7 +3,7 @@
 Vitrine com 15 modelos de cardápio digital para apresentar a clientes, e a base para entregar a página final de cada um.
 Site estático (HTML, CSS e JS puros), sem build, pronto para o GitHub Pages.
 
-**Endereço depois de publicar:** `https://tanattos18.github.io/Card-pio_Digital/`
+**Endereço depois de publicar:** `https://tanattos18.github.io/Cardapio_Digital/`
 
 ## Modelos
 
