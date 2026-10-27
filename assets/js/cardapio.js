@@ -301,7 +301,14 @@
       '<button class="btn btn-ghost btn-sm" data-acao="qr">' + ICON.qr + 'QR Code do cardápio</button>' +
       '<p class="creditos">© ' + new Date().getFullYear() + ' ' + esc(C.nome) + ' · Cardápio digital' +
       (V.nome ? ' por <a href="' + wa(V.whatsapp, 'Olá! Vi o cardápio digital da ' + C.nome + ' e quero um para o meu negócio.') + '" target="_blank" rel="noopener">' + esc(V.nome) + '</a>' : '') +
-      '</p></footer>';
+      '</p>' + creditosHtml() + '</footer>';
+  }
+  // fotos com licença Creative Commons exigem citar autor e licença
+  function creditosHtml() {
+    if (!C.creditosFotos || !C.creditosFotos.length) return '';
+    return '<p class="creditos-fotos">Fotos: ' + C.creditosFotos.map(function (c) {
+      return '<a href="' + esc(c.link) + '" target="_blank" rel="noopener">' + esc(c.autor) + '</a> (' + esc(c.licenca) + ')';
+    }).join(', ') + ', via Wikimedia Commons.</p>';
   }
   function demoHtml() {
     if (!C.demo) return '';

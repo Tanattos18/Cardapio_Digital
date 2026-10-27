@@ -27,7 +27,7 @@
   /* cards */
   var grade = $('.grade');
   grade.innerHTML = MODELOS.map(function (m, i) {
-    var capa = 'https://images.unsplash.com/photo-' + m.capa + '?w=700&q=60&auto=format&fit=crop';
+    var capa = /[\/.]/.test(m.capa) ? m.capa : 'https://images.unsplash.com/photo-' + m.capa + '?w=700&q=60&auto=format&fit=crop';
     return '<article class="modelo" data-nicho="' + m.nicho + '" style="--cor:' + m.cor + ';--fundo:' + m.fundo + '">' +
       '<a class="previa" href="' + esc(m.caminho) + '" target="_blank" rel="noopener" aria-label="Abrir modelo ' + esc(m.nome) + '">' +
       '<img src="' + capa + '" alt="" loading="lazy"><iframe title="Prévia ' + esc(m.nome) + '" data-src="' + esc(m.caminho) + '?previa=1" tabindex="-1"></iframe></a>' +

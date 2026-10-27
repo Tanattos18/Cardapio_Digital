@@ -16,7 +16,7 @@ window.CARDAPIO = {
   "chamada": "Pamonharia artesanal",
   "slogan": "Pamonha fresquinha, do jeitinho da roça.",
   "logo": null,
-  "capa": "1551754655-cd27e38d2076",
+  "capa": "../../../assets/img/pamonharia/pamonhas-prato.jpg",
   "tema": {
     "fonteTitulo": "'Fraunces', serif",
     "fonteTexto": "'Nunito', system-ui, sans-serif",
@@ -40,10 +40,10 @@ window.CARDAPIO = {
     "Encomendas para festas"
   ],
   "galeria": [
-    "1551754655-cd27e38d2076",
-    "1470119693884-47d3a1d1f180",
-    "1509042239860-f550ce710b93",
-    "1586444248902-2f64eddc13df"
+    "../../../assets/img/pamonharia/pamonha-preparo.jpg",
+    "../../../assets/img/pamonharia/pamonhas-prato.jpg",
+    "../../../assets/img/pamonharia/curau.jpg",
+    "../../../assets/img/pamonharia/milho-verde.jpg"
   ],
   "contato": {
     "whatsapp": "5500900000013",
@@ -122,12 +122,12 @@ window.CARDAPIO = {
           "nome": "Bolo de milho cremoso (inteiro)",
           "desc": "Forma redonda, serve 10 pessoas.",
           "preco": 38,
-          "img": "1724079908191-5f7fb8d34c6f"
+          "img": "../../../assets/img/pamonharia/bolo-milho-inteiro.jpg"
         },
         {
           "nome": "Curau com canela (500ml)",
           "preco": 14,
-          "img": "1673877792724-4ca45923fee4"
+          "img": "../../../assets/img/pamonharia/curau.jpg"
         }
       ]
     },
@@ -140,13 +140,13 @@ window.CARDAPIO = {
           "nome": "Pamonha doce",
           "desc": "Milho verde, açúcar e uma pitada de sal.",
           "preco": 10,
-          "img": "1551754655-cd27e38d2076"
+          "img": "../../../assets/img/pamonharia/pamonha-aberta.jpg"
         },
         {
           "nome": "Pamonha de sal com queijo",
           "desc": "Recheada com queijo meia-cura.",
           "preco": 12,
-          "img": "1732118070605-8c5faa62d284",
+          "img": "../../../assets/img/pamonharia/pamonha-amarrada.jpg",
           "tags": [
             "Mais pedido"
           ]
@@ -155,13 +155,13 @@ window.CARDAPIO = {
           "nome": "Pamonha de sal com linguiça",
           "desc": "Linguiça de porco caseira.",
           "preco": 13,
-          "img": "1730415136652-3044ec3db585"
+          "img": "../../../assets/img/pamonharia/pamonha-mao.jpg"
         },
         {
           "nome": "Pamonha à moda",
           "desc": "Queijo, linguiça e pimenta-de-cheiro.",
           "preco": 14,
-          "img": "1588848009826-602764d65627",
+          "img": "../../../assets/img/pamonharia/pamonha-recheio.jpg",
           "tags": [
             "Picante"
           ]
@@ -169,12 +169,12 @@ window.CARDAPIO = {
         {
           "nome": "Pamonha doce com queijo",
           "preco": 12,
-          "img": "1552332386-1634d96809cf"
+          "img": "../../../assets/img/pamonharia/pamonhas-prato.jpg"
         },
         {
           "nome": "Pamonha de frango com catupiry",
           "preco": 14,
-          "img": "1730415136652-3044ec3db585"
+          "img": "../../../assets/img/pamonharia/pamonha-cafe.jpg"
         },
         {
           "nome": "Pamonha frita",
@@ -195,7 +195,7 @@ window.CARDAPIO = {
           "nome": "Curau",
           "desc": "Copo 300ml, polvilhado com canela.",
           "preco": 9,
-          "img": "1673877792724-4ca45923fee4"
+          "img": "../../../assets/img/pamonharia/curau.jpg"
         },
         {
           "nome": "Milho assado na manteiga",
@@ -207,13 +207,13 @@ window.CARDAPIO = {
           "nome": "Mingau de milho verde",
           "desc": "Copo 300ml.",
           "preco": 9,
-          "img": "1621658537360-dfcb008fe19f"
+          "img": "../../../assets/img/pamonharia/mingau.jpg"
         },
         {
           "nome": "Bolo de milho (fatia)",
           "desc": "Cremoso, receita de vó.",
           "preco": 7,
-          "img": "1606331481324-de77ab01bb54"
+          "img": "../../../assets/img/pamonharia/bolo-milho-fatia.jpg"
         },
         {
           "nome": "Cuscuz com manteiga",
@@ -236,7 +236,7 @@ window.CARDAPIO = {
           "nome": "Empadão",
           "desc": "Frango, linguiça, queijo, ovo e guariroba.",
           "preco": 18,
-          "img": "1581986675622-41eccf27129d"
+          "img": "../../../assets/img/pamonharia/empadao-goiano.jpg"
         },
         {
           "nome": "Pastel assado",
@@ -285,21 +285,93 @@ window.CARDAPIO = {
         {
           "nome": "Dúzia de pamonhas doces",
           "preco": 108,
-          "img": "1548078835-cb7d27702c1f"
+          "img": "../../../assets/img/pamonharia/pamonhas-prato.jpg"
         },
         {
           "nome": "Dúzia de pamonhas de sal",
           "desc": "Queijo, linguiça ou à moda (pode misturar).",
           "preco": 130,
-          "img": "1588848009826-602764d65627"
+          "img": "../../../assets/img/pamonharia/pamonha-amarrada.jpg"
         },
         {
           "nome": "Pamonha congelada",
           "desc": "Pacote com 5 unidades, dura até 3 meses no freezer.",
           "preco": 50,
-          "img": "1732118070605-8c5faa62d284"
+          "img": "../../../assets/img/pamonharia/pamonha-feira.jpg"
         }
       ]
+    }
+  ],
+  "creditosFotos": [
+    {
+      "autor": "Jorge Peixoto",
+      "licenca": "CC BY-SA 3.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonha_(unwrapped).jpg"
+    },
+    {
+      "autor": "Isalinky",
+      "licenca": "CC BY-SA 3.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonhas.jpg"
+    },
+    {
+      "autor": "Melsj",
+      "licenca": "CC BY-SA 4.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonha_1.jpg"
+    },
+    {
+      "autor": "Melsj",
+      "licenca": "CC BY-SA 4.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonha_2.jpg"
+    },
+    {
+      "autor": "Gleysielle de Aquino",
+      "licenca": "CC BY-SA 4.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonha,_prato_t%C3%ADpico_da_culin%C3%A1ria_brasileira.jpg"
+    },
+    {
+      "autor": "Mateus S. Figueiredo",
+      "licenca": "CC BY-SA 3.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonha6.JPG"
+    },
+    {
+      "autor": "MTur Destinos",
+      "licenca": "Public domain",
+      "link": "https://commons.wikimedia.org/wiki/File:LeandroMoura_FeiraDaLua_Goiania_GO_(39168863510).jpg"
+    },
+    {
+      "autor": "Mateus S. Figueiredo",
+      "licenca": "CC BY-SA 3.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Pamonha3.JPG"
+    },
+    {
+      "autor": "Giselli Carvalho",
+      "licenca": "CC BY 2.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Canjica1.jpg"
+    },
+    {
+      "autor": "Leo Rey",
+      "licenca": "CC BY 2.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Canjica_caipira.jpg"
+    },
+    {
+      "autor": "Alebasi24",
+      "licenca": "CC BY-SA 4.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Bolo_de_milho_caseiro.jpg"
+    },
+    {
+      "autor": "Túllio F",
+      "licenca": "CC BY-SA 4.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Bolo_de_Fub%C3%A1_(milho)_02.jpg"
+    },
+    {
+      "autor": "Elis Florentine",
+      "licenca": "CC BY 2.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Empad%C3%A3o_Goiano..jpg"
+    },
+    {
+      "autor": "Simplus Menegati",
+      "licenca": "CC BY-SA 4.0",
+      "link": "https://commons.wikimedia.org/wiki/File:Preparando_mingau_de_milho_verde_em_Imba%C3%BA,_Paran%C3%A1.jpg"
     }
   ]
 };
