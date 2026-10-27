@@ -91,12 +91,17 @@ main > section > h2, .menu-head h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); marg
 .price small { color: var(--muted); font-size: .75rem; }
 .item-opts { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 8px 0 0; font-size: .82rem; color: var(--muted); }
 .item-opts b { color: var(--text); }
+.nutri { display: inline-block; margin: 8px 0 0; padding: 3px 9px; border-radius: 6px; font-size: .76rem; font-weight: 700; background: rgba(47, 158, 68, .14); color: #2f9e44; }
+.tema-escuro .nutri { color: #69db7c; }
+.linha-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .tags { display: inline-flex; flex-wrap: wrap; gap: 4px; }
 .tag { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; padding: 3px 8px; border-radius: 6px; background: var(--sec); color: #111; }
 .tag-novo { background: #2b7de9; color: #fff; }
 .tag-vegetariano, .tag-vegano { background: #2f9e44; color: #fff; }
 .tag-picante { background: #e03131; color: #fff; }
 .tag-promocao { background: #111; color: #fff; }
+.tag-fit, .tag-low-carb { background: #2f9e44; color: #fff; }
+.tag-encomenda { background: #7048e8; color: #fff; }
 .add { display: inline-flex; align-items: center; gap: 6px; border: 0; background: var(--pri); color: var(--pri-ink); border-radius: 99px; font-weight: 700; }
 .no-results { text-align: center; color: var(--muted); padding: 40px 0; }
 .noimg { background: linear-gradient(135deg, var(--surface), var(--line)); }

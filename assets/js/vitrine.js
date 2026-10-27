@@ -18,7 +18,27 @@
   /* filtros */
   var nichos = [];
   MODELOS.forEach(function (m) { if (!nichos.some(function (n) { return n[0] === m.nicho; })) nichos.push([m.nicho, m.nichoNome]); });
-  var ICONES = { hamburgueria: '🍔', pizzaria: '🍕', restaurante: '🍽️', espetinho: '🍢', pamonharia: '🌽' };
+  $$('[data-nichos]').forEach(function (el) { el.textContent = nichos.length; });
+  var ICONES = { hamburgueria: '🍔', pizzaria: '🍕', restaurante: '🍽️', espetinho: '🍢', pamonharia: '🌽',
+    confeitaria: '🎂', acai: '🍇', salgados: '🥟', marmitas: '🥗', pastelaria: '🥤' };
+
+  /* planos (vêm do vendedor.js) */
+  function brl(n) { return n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 0 }); }
+  var planos = V.planos || [];
+  var menorPreco = planos.length ? Math.min.apply(null, planos.map(function (p) { return p.preco; })) : null;
+  $('.planos').innerHTML = planos.map(function (p) {
+    return '<article class="plano' + (p.destaque ? ' destaque' : '') + '">' + (p.destaque ? '<span class="selo">Mais escolhido</span>' : '') +
+      '<h3>' + esc(p.nome) + '</h3><p class="resumo">' + esc(p.resumo || '') + '</p>' +
+      '<p class="preco"><b>' + brl(p.preco) + '</b><span>pagamento único</span></p>' +
+      '<ul>' + p.itens.map(function (i) { return '<li>' + esc(i) + '</li>'; }).join('') + '</ul>' +
+      '<a class="btn ' + (p.destaque ? 'btn-pri' : 'btn-ghost') + '" target="_blank" rel="noopener" href="' +
+      wa('Olá! Tenho interesse no plano ' + p.nome + ' (' + brl(p.preco) + ') do cardápio digital.') + '">Quero o ' + esc(p.nome) + '</a></article>';
+  }).join('');
+  if (V.manutencao) {
+    var man = $('.manutencao');
+    man.innerHTML = '<b>Manutenção mensal: ' + brl(V.manutencao.preco) + '/mês</b><span>' + esc(V.manutencao.texto) + '</span>';
+    man.hidden = false;
+  }
   var filtros = $('.filtros');
   filtros.innerHTML = [['todos', 'Todos']].concat(nichos).map(function (n, i) {
     return '<button role="tab" aria-selected="' + (i === 0) + '" data-filtro="' + n[0] + '">' + (ICONES[n[0]] ? ICONES[n[0]] + ' ' : '') + esc(n[1]) + '</button>';
@@ -33,6 +53,7 @@
       '<img src="' + capa + '" alt="" loading="lazy"><iframe title="Prévia ' + esc(m.nome) + '" data-src="' + esc(m.caminho) + '?previa=1" tabindex="-1"></iframe></a>' +
       '<div class="modelo-info"><div class="modelo-tags"><span>' + (ICONES[m.nicho] || '') + ' ' + esc(m.nichoNome) + ' ' + m.numero + '</span><span class="estilo">' + esc(m.estilo) + '</span></div>' +
       '<h3>' + esc(m.nome) + '</h3><p>' + esc(m.slogan) + '</p><p class="meta">' + m.itens + ' produtos com preço · ' + (m.escuro ? 'tema escuro' : 'tema claro') + '</p>' +
+      (menorPreco ? '<p class="a-partir">A partir de <b>' + brl(menorPreco) + '</b> · <a href="#planos">ver planos</a></p>' : '') +
       '<div class="modelo-acoes"><a class="btn btn-pri btn-sm" href="' + esc(m.caminho) + '" target="_blank" rel="noopener">Ver modelo</a>' +
       '<button class="btn btn-ghost btn-sm" data-qr="' + i + '">QR Code</button>' +
       '<a class="btn btn-wa btn-sm" target="_blank" rel="noopener" href="' + wa('Olá! Gostei do modelo "' + m.nichoNome + ' ' + m.numero + ' · ' + m.estilo + '" (' + m.nome + ') e quero um cardápio digital.') + '">Quero este</a></div></div></article>';

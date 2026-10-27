@@ -12,12 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/vitrine.css?v=1">
+  <link rel="stylesheet" href="assets/css/vitrine.css?v=2">
 </head>
 <body>
   <header class="topo">
     <a class="marca" href="#"><span class="marca-ic">▦</span><span data-vendedor="nome">Seu Nome</span></a>
-    <nav><a href="#modelos">Modelos</a><a href="#como-funciona">Como funciona</a><a href="#incluso">O que vem</a><a class="btn btn-wa btn-sm" data-wa="Olá! Quero saber mais sobre o cardápio digital." href="#">Fale comigo</a></nav>
+    <nav><a href="#modelos">Modelos</a><a href="#planos">Planos</a><a href="#como-funciona">Como funciona</a><a href="#incluso">O que vem</a><a class="btn btn-wa btn-sm" data-wa="Olá! Quero saber mais sobre o cardápio digital." href="#">Fale comigo</a></nav>
   </header>
 
   <section class="hero">
@@ -31,7 +31,7 @@
       </div>
       <ul class="numeros">
         <li><b data-total>15</b> modelos prontos</li>
-        <li><b>5</b> tipos de negócio</li>
+        <li><b data-nichos>10</b> tipos de negócio</li>
         <li><b>QR Code</b> para as mesas</li>
       </ul>
     </div>
@@ -47,6 +47,15 @@
     </div>
     <div class="filtros" role="tablist" aria-label="Filtrar por tipo de negócio"></div>
     <div class="grade"></div>
+  </section>
+
+  <section id="planos" class="secao">
+    <div class="secao-head">
+      <h2>Planos</h2>
+      <p>Escolha qualquer modelo: o preço é o mesmo. O que muda entre os planos é o tamanho do cardápio e o que eu faço por você.</p>
+    </div>
+    <div class="planos"></div>
+    <div class="manutencao" hidden></div>
   </section>
 
   <section id="como-funciona" class="secao">
@@ -93,9 +102,9 @@
     </div>
   </div>
 
-  <script src="assets/js/vendedor.js?v=2"></script>
-  <script src="assets/js/modelos.js?v=2"></script>
+  <script src="assets/js/vendedor.js?v=3"></script>
+  <script src="assets/js/modelos.js?v=3"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="assets/js/vitrine.js?v=3"></script>
+  <script src="assets/js/vitrine.js?v=4"></script>
 </body>
 </html>

@@ -66,6 +66,26 @@ img { display: block; max-width: 100%; }
 .modelo .meta { font-size: .82rem; }
 .modelo-acoes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 16px; }
 
+.modelo .a-partir { color: var(--text); font-size: .9rem; margin-top: 10px; }
+.modelo .a-partir b { color: var(--pri); }
+.modelo .a-partir a { color: var(--muted); }
+
+.planos { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 860px; }
+.plano { position: relative; display: flex; flex-direction: column; padding: 28px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+.plano.destaque { border: 2px solid var(--pri); }
+.plano .selo { position: absolute; top: -12px; left: 24px; background: var(--pri); color: var(--pri-ink); font-weight: 800; font-size: .75rem; padding: 4px 12px; border-radius: 99px; }
+.plano h3 { font-size: 1.4rem; }
+.plano .resumo { color: var(--muted); margin: 6px 0 0; }
+.plano .preco { margin: 18px 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.plano .preco b { font: 800 2.4rem 'Poppins', sans-serif; }
+.plano .preco span { color: var(--muted); font-size: .9rem; }
+.plano ul { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; }
+.plano li { position: relative; padding-left: 26px; }
+.plano li::before { content: '✓'; position: absolute; left: 0; color: var(--wa); font-weight: 800; }
+.plano .btn { margin-top: auto; }
+.manutencao { max-width: 860px; margin-top: 20px; padding: 18px 22px; border-radius: var(--radius); background: var(--surface2); border: 1px dashed var(--line); display: grid; gap: 4px; }
+.manutencao span { color: var(--muted); }
+
 .passos { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); counter-reset: p; }
 .passos li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
 .passos b { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: var(--pri); color: var(--pri-ink); font: 800 1.2rem 'Poppins', sans-serif; margin-bottom: 16px; }

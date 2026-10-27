@@ -1,6 +1,6 @@
 # Cardápio Digital — vitrine de modelos
 
-Vitrine com 15 modelos de cardápio digital para apresentar a clientes, e a base para entregar a página final de cada um.
+Vitrine com 30 modelos de cardápio digital para apresentar a clientes, e a base para entregar a página final de cada um.
 Site estático (HTML, CSS e JS puros), sem build, pronto para o GitHub Pages.
 
 **Endereço depois de publicar:** `https://tanattos18.github.io/Cardapio_Digital/`
@@ -14,6 +14,17 @@ Site estático (HTML, CSS e JS puros), sem build, pronto para o GitHub Pages.
 | Restaurante | Sabor da Terra · App | Bistrô Alecrim · Clássico | Cantina do Chef · Impacto |
 | Espetinho | Espeto de Ouro · Impacto | Point do Espetinho · App | Brasa & Prosa · Clássico |
 | Pamonharia | Milho de Ouro · Clássico | Pamonha da Roça · App | Casa da Pamonha · Impacto |
+| Confeitaria | Doce Encanto · App | Ateliê da Vó Cida · Clássico | Sweet Lab · Impacto |
+| Açaí e sorvete | Açaí da Praça · App | Point do Açaí · Impacto | Gelato & Açaí · Clássico |
+| Salgados para festa | Salgados da Lu · App | Festa & Sabor · Impacto | Cantinho do Salgado · Clássico |
+| Marmitas fit | Fit Express · App | Nutri Marmitas · Clássico | Power Fit · Impacto |
+| Pastelaria | Pastel do Japa · Impacto | Pastelaria Central · App | Lanchonete Bom Gosto · Clássico |
+
+Confeitaria e salgados pedem **data e horário da encomenda** no pedido (`encomenda` no `config.js`). As marmitas mostram **calorias e proteína** (`nutri` em cada produto).
+
+Os **planos e preços** que aparecem na vitrine ficam em `assets/js/vendedor.js` (`planos` e `manutencao`).
+
+Algumas fotos (pamonha, coxinha, pastel, esfiha, caldo de cana...) vêm do Wikimedia Commons e estão em `assets/img/`. Os créditos de autor e licença aparecem no rodapé das páginas que as usam; a lista está em `assets/img/*/creditos.json`.
 
 Três estilos de layout: **Impacto** (capa em tela cheia e cards com foto), **Clássico** (cardápio impresso, preços em linha pontilhada) e **App de delivery** (estilo iFood, lista com miniaturas). Cada modelo tem cores, fontes, textos e cardápio próprios.
 

@@ -141,8 +141,10 @@
       (temOp ? '<small>a partir de</small>' : '') + '<b>' + brl(precoBase(it)) + '</b></span>';
   }
   function opcoesHtml(it) {
-    if (!it.opcoes || it.opcoes.length < 2) return '';
-    return '<p class="item-opts">' + it.opcoes.map(function (o) {
+    // "nutri": informação nutricional curta, ex.: "420 kcal · 38 g de proteína"
+    var nutri = it.nutri ? '<p class="nutri">' + esc(it.nutri) + '</p>' : '';
+    if (!it.opcoes || it.opcoes.length < 2) return nutri;
+    return nutri + '<p class="item-opts">' + it.opcoes.map(function (o) {
       return '<span>' + esc(o.nome) + ' <b>' + brl(o.preco) + '</b></span>';
     }).join('') + '</p>';
   }
@@ -385,6 +387,7 @@
       '<button class="close" data-acao="fechar" aria-label="Fechar">' + ICON.x + '</button>' +
       (it.img ? '<div class="modal-img">' + imgTag(it.img, 900, it.nome) + '</div>' : '') +
       '<div class="modal-body">' + tagsHtml(it) + '<h3>' + esc(it.nome) + '</h3>' + (it.desc ? '<p class="desc">' + esc(it.desc) + '</p>' : '') +
+      (it.nutri ? '<p class="nutri">' + esc(it.nutri) + '</p>' : '') +
       (temOp ? '<fieldset><legend>' + esc(it.opcoesTitulo || 'Escolha uma opção') + ' <em>obrigatório</em></legend>' + it.opcoes.map(function (o, i) {
         return '<label class="opt"><input type="radio" name="op" value="' + i + '"' + (i === 0 ? ' checked' : '') + '><span>' + esc(o.nome) + '</span><b>' + brl(o.preco) + '</b></label>';
       }).join('') + '</fieldset>' : '') +
@@ -439,6 +442,7 @@
       (form.tipo === 'entrega' ? '<label><span>Endereço completo</span><input name="endereco" required autocomplete="street-address" placeholder="Rua, número, bairro" value="' + esc(form.endereco) + '"></label>' +
         '<label><span>Ponto de referência</span><input name="referencia" value="' + esc(form.referencia) + '"></label>' : '') +
       (form.tipo === 'mesa' ? '<label><span>Número da mesa</span><input name="mesa" required inputmode="numeric" value="' + esc(MESA || form.mesa) + '"></label>' : '') +
+      encomendaHtml() +
       '<label><span>Forma de pagamento</span><select name="pagamento">' + (C.pagamentos || ['Pix', 'Cartão', 'Dinheiro']).map(function (p) {
         return '<option' + (form.pagamento === p ? ' selected' : '') + '>' + esc(p) + '</option>';
       }).join('') + '</select></label>' +
@@ -451,6 +455,19 @@
       (minimoFalta ? '<p class="aviso">Pedido mínimo para entrega: ' + brl(entrega.pedidoMinimo) + '</p>' : '') +
       '<button class="btn btn-pri btn-enviar"' + (!carrinho.length || minimoFalta ? ' disabled' : '') + '>' + ICON.whatsapp + 'Enviar pedido pelo WhatsApp</button></div>';
   }
+  // Negócios por encomenda (bolos, salgados...): config "encomenda: { antecedenciaDias: 2, aviso: '...' }"
+  function dataMinima() {
+    var d = new Date(); d.setDate(d.getDate() + (C.encomenda.antecedenciaDias || 0));
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+  function encomendaHtml() {
+    if (!C.encomenda || form.tipo === 'mesa') return '';
+    var quando = form.tipo === 'entrega' ? 'entrega' : 'retirada';
+    return (C.encomenda.aviso ? '<p class="aviso">' + esc(C.encomenda.aviso) + '</p>' : '') +
+      '<div class="linha-2"><label><span>Data da ' + quando + '</span><input type="date" name="data" required min="' + dataMinima() + '" value="' + esc(form.data) + '"></label>' +
+      '<label><span>Horário</span><input type="time" name="hora" required value="' + esc(form.hora) + '"></label></div>';
+  }
+  function dataBR(iso) { var p = String(iso || '').split('-'); return p.length === 3 ? p[2] + '/' + p[1] + '/' + p[0] : iso; }
   function lerForm() {
     var f = $('.checkout', drawer); if (!f) return;
     $$('input, select, textarea', f).forEach(function (el) {
@@ -493,6 +510,7 @@
     L.push('*Tipo:* ' + ({ entrega: 'Entrega', retirada: 'Retirada no local', mesa: 'Consumo na mesa' })[form.tipo]);
     if (form.tipo === 'entrega') { L.push('*Endereço:* ' + form.endereco); if (form.referencia) L.push('*Referência:* ' + form.referencia); }
     if (form.tipo === 'mesa') L.push('*Mesa:* ' + (form.mesa || MESA));
+    if (C.encomenda && form.tipo !== 'mesa' && form.data) L.push('*Encomenda para:* ' + dataBR(form.data) + (form.hora ? ' às ' + form.hora : ''));
     L.push('*Pagamento:* ' + form.pagamento + (/dinheiro/i.test(form.pagamento) && form.troco ? ' (troco para R$ ' + form.troco + ')' : ''));
     if (form.obs) L.push('*Obs.:* ' + form.obs);
     if (C.demo) L.push('', '_(pedido de teste enviado pelo modelo de demonstração)_');
